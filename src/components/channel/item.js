@@ -1,15 +1,17 @@
 import React from 'react'
 import { Heading, Text, Image, Box } from '@chakra-ui/core'
+import '../../index.css'
 
 function Item(props) {
     return (
-        <Box>
-            <Heading >
-                Sell On Eaay
-           </Heading>
+        <Box className="bgClass" p="6">
+            <Image className="imageSize" src={props.item.image} />
+            <Heading as="h5" size="md">
+                {props.item.heading}
+            </Heading>
             <Text>
-                Sell to millions of global shoppers on the leading creative marketplace.
-           </Text>
+                {props.item.text}
+            </Text>
         </Box>
     )
 }

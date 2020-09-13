@@ -1,7 +1,7 @@
 import React from 'react'
 import { Flex, Text, Heading, Box, Divider } from '@chakra-ui/core'
-import Lottie from "react-lottie"
-import Animation from '../../assets/anim.json'
+// import Lottie from "react-lottie"
+// import Animation from '../../assets/anim.json'
 
 
 function Content() {
@@ -16,13 +16,13 @@ function Content() {
                 wrap="wrap"
             >
                 <Flex flexGrow={1}>
-                    <Lottie
+                    {/* <Lottie
                         options={{
                             animationData: Animation,
                         }}
                         height={"100%"}
                         width={"100%"}
-                    />
+                    /> */}
                 </Flex>
                 <Flex flexGrow={2} justify="center" flexDirection="column">
                     <Box mx="auto" padding="2rem" width={{ md: "50vw" }}>
@@ -53,13 +53,13 @@ function Content() {
                 wrap="wrap"
             >
                 <Flex flexGrow={1}>
-                    <Lottie
+                    {/* <Lottie
                         options={{
                             animationData: Animation,
                         }}
                         height={"100%"}
                         width={"100%"}
-                    />
+                    /> */}
                 </Flex>
                 <Flex flexGrow={2} justify="center" flexDirection="column">
                     <Box mx="auto" padding="2rem" width={{ md: "50vw" }}>
