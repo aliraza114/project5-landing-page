@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { Flex, Text, Link } from "@chakra-ui/core"
 import Shake from 'react-reveal/Shake'
 import { motion } from 'framer-motion'

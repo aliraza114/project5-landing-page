@@ -7,18 +7,6 @@ import Item from './item'
 function Channel() {
     const channels = [
         {
-            image: 'https://www.zibbet.com/wp-content/uploads/2019/01/etsy-test.svg',
-            heading: 'Sell on Etsy',
-            text: 'Sell to millions of global shoppers on the leading creative marketplace.',
-            bgColor: '#F45800'
-        },
-        {
-            image: 'https://www.zibbet.com/wp-content/uploads/2020/02/Facebook-icon-2.svg',
-            heading: 'Facebook Shop',
-            text: 'Sell right from your Facebook Page with this seamless shopping experience.',
-            bgColor: '#1877F2'
-        },
-        {
             image: 'https://www.zibbet.com/wp-content/uploads/2020/06/Insatgram-icon.png',
             heading: 'Instagram',
             text: 'Create a mobile storefront and give your audience a simpler way to shop.',
@@ -42,6 +30,18 @@ function Channel() {
             text: 'Build a beautiful and unique standalone website to amplify your brand.',
             bgColor: '#F9B121'
         },
+        {
+            image: 'https://www.zibbet.com/wp-content/uploads/2019/01/etsy-test.svg',
+            heading: 'Sell on Etsy',
+            text: 'Sell to millions of global shoppers on the leading creative  .',
+            bgColor: '#F45800'
+        },
+        {
+            image: 'https://www.zibbet.com/wp-content/uploads/2020/02/Facebook-icon-2.svg',
+            heading: 'Facebook Shop',
+            text: 'Sell right from your Facebook Page with this seamless shopping experience.',
+            bgColor: '#1877F2'
+        }
     ]
     return (
         <Flex

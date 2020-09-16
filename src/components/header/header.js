@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import './header.css'
 import {
-    Flex, Text, Link, Button, Box, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerHeader, DrawerBody, Heading, Image
+    Flex, Link, Button, Box, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerHeader, DrawerBody, Heading, Image
 } from "@chakra-ui/core"
 import { MdMenu } from "react-icons/md"
 
@@ -38,7 +38,6 @@ const Header = () => {
             >
                 <Image src="https://www.zibbet.com/wp-content/uploads/2019/01/Logo.svg" alt="Logo" />
             </Flex>
-
             <Flex
                 justifyContent="center"
                 display={{ xs: "none", md: "flex" }}
@@ -84,7 +83,6 @@ const Header = () => {
                     <DrawerHeader>
                         <Heading>CodeSchool</Heading>
                     </DrawerHeader>
-
                     <DrawerBody>
                         <Flex flexDir="column">
                             <NavLink
