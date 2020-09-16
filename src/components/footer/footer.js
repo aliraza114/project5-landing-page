@@ -8,13 +8,11 @@ import '../../index.css'
 const Motion = motion.custom(Text)
 
 const Header = () => {
-    const [navbar, setNavbar] = useState(false)
     return (
         <Flex
             bg="gray"
             maxW="100%"
             p={5}
-
             roundedBottom="0.2rem"
             justifyContent="center"
             alignItems="center"

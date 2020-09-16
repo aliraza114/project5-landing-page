@@ -47,11 +47,13 @@ function Channel() {
         <Flex
             align="center"
             flexDir="column"
+            alignContent="center"
+            textAlign="center"
         >
             <Heading
                 textAlign="center"
                 mt="1rem"
-                mb="2.5rem"
+                mb="1rem"
             >
                 Our growing list of sales channels
             </Heading>
