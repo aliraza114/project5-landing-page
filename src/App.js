@@ -1,16 +1,17 @@
 import React from 'react';
 import Header from './components/header/header'
-import Content from './components/content/content';
+import Content from './components/content/content'
 import Channel from './components/channel/channel'
-
+import Footer from './components/footer/footer'
 
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
+      <Header/>
       <Content/>
       <Channel />
+      <Footer />
     </div>
   );
 }

@@ -5,4 +5,11 @@
 .imageSize {
   width: 80px;
   height: 80px;
+  border-radius: 15%;
+}
+
+.footerText {
+  color: rgb(109, 73, 143);
+  font-weight: 700;
+  font-size: medium;
 }

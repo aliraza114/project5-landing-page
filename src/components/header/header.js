@@ -10,8 +10,8 @@ const NavLink = ({ children, ...props }) => (
         height="100%"
         px={2}
         fontSize="lg"
-        color="white"
-        _hover={{ textDecor: "none" }}
+        color="black"
+        _hover={{ textDecor: "none", color: "#C53030", fontWeight: "700" }}
         {...props}
     >
         {children}
@@ -23,7 +23,7 @@ const Header = () => {
     const onClose = () => setNavbar(!navbar)
     return (
         <Flex
-            bgImage="linear-gradient(90deg, rgba(69,168,222,1) 0%, rgba(39,128,195,1) 100%)"
+            background="#FFFFFF"
             maxW="100%"
             px={5}
             py={4}
@@ -59,7 +59,7 @@ const Header = () => {
                 </NavLink>
                 <Link
                     href="/#contact"
-                    _hover={{ textDecor: "none" }}
+                    _hover={{ textDecor: "none", color: "#C53030", fontWeight: "700" }}
                     onClick={onClose}
                 >
                     <Button ml="0.5rem">Get Started</Button>
@@ -69,7 +69,7 @@ const Header = () => {
                 display={{ xs: "flex", md: "none" }}
                 onClick={() => setNavbar(!navbar)}
             >
-                <MdMenu size="1.8rem" color="white" />
+                <MdMenu size="1.8rem" color="black" />
             </Box>
 
             <Drawer
@@ -88,7 +88,6 @@ const Header = () => {
                     <DrawerBody>
                         <Flex flexDir="column">
                             <NavLink
-                                onClick={onClose}
                                 href="/#"
                                 color="red"
                                 mt="1rem"
@@ -96,7 +95,6 @@ const Header = () => {
                                 Sales Channel
                             </NavLink>
                             <NavLink
-                                onClick={onClose}
                                 href="/#"
                                 color="red"
                                 mt="1rem"
@@ -104,7 +102,6 @@ const Header = () => {
                                 Pricing
                             </NavLink>
                             <NavLink
-                                onClick={onClose}
                                 href="/#"
                                 color="red"
                                 mt="1rem"
@@ -112,7 +109,6 @@ const Header = () => {
                                 About
                             </NavLink>
                             <NavLink
-                                onClick={onClose}
                                 href="/#about"
                                 mt="1rem"
                                 color="red"
@@ -122,9 +118,9 @@ const Header = () => {
                             <NavLink
                                 onClick={onClose}
                                 href="/#contact"
-                                _hover={{ textDecor: "none" }}
+                                _hover={{ textDecor: "none", color: "#C53030", fontWeight: "700"  }}
                             >
-                                <Button mt="1rem" variantColor="blue">
+                                <Button mt="1rem" variantColor="red">
                                     Get Started
                                 </Button>
                             </NavLink>

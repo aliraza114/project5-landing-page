@@ -1,8 +1,12 @@
 import React from 'react'
-import { Flex, Text, Heading, Box, Divider } from '@chakra-ui/core'
-// import Lottie from "react-lottie"
-// import Animation from '../../assets/anim.json'
+import { Flex, Text, Heading, Box, Divider, Image } from '@chakra-ui/core'
+import { Fade } from 'react-reveal'
 
+import { motion } from 'framer-motion'
+import image from '../../assets/animation.jpg'
+import gifImage from '../../assets/topone.gif'
+
+const Motion = motion.custom(Flex)
 
 function Content() {
 
@@ -10,19 +14,14 @@ function Content() {
         <div>
             <Flex
                 id="about"
-                p={{ sm: "3rem 2rem", lg: "3rem 5rem" }}
+                p={{ sm: "3rem 2rem", lg: "3rem 3rem" }}
                 align="center"
-                bg="gray.50"
                 wrap="wrap"
             >
                 <Flex flexGrow={1}>
-                    {/* <Lottie
-                        options={{
-                            animationData: Animation,
-                        }}
-                        height={"100%"}
-                        width={"100%"}
-                    /> */}
+                    <Image src={gifImage} alt="loading">
+
+                    </Image>
                 </Flex>
                 <Flex flexGrow={2} justify="center" flexDirection="column">
                     <Box mx="auto" padding="2rem" width={{ md: "50vw" }}>
@@ -52,16 +51,26 @@ function Content() {
                 bg="gray.50"
                 wrap="wrap"
             >
+                <Motion 
+                initial={{ y: "100vh", opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1.5, ease: "easeIn" }}
+                flexGrow={1}
+                justify="center"
+                flexDirection="column">
+
                 <Flex flexGrow={1}>
-                    {/* <Lottie
-                        options={{
-                            animationData: Animation,
-                        }}
-                        height={"100%"}
-                        width={"100%"}
-                    /> */}
+                   
+                 <Fade left duration={3000}>
+                     <Image
+                        src={image}
+                        height="350px"
+                        width="550px"
+                    /> 
+                </Fade> 
                 </Flex>
-                <Flex flexGrow={2} justify="center" flexDirection="column">
+                </Motion>
+                <Flex flexGrow={1} justify="center" flexDirection="column">
                     <Box mx="auto" padding="2rem" width={{ md: "50vw" }}>
                         <Heading
                             size="xl"
